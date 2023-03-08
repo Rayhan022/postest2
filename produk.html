@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<h1>Form Persona Komputer</h1>
+    <link rel="stylesheet" type="text/css" href="beranda.css">
+	<style>
+		form {
+			margin: 50px auto;
+			max-width: 500px;
+			padding: 20px;
+			border: 2px solid #ccc;
+			border-radius: 5px;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		input[type=text], input[type=email], select {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+		}
+
+		input[type=radio], input[type=checkbox] {
+			margin-right: 10px;
+		}
+
+		button[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		button[type=submit]:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<label for="nama">Nama Lengkap</label>
+		<input type="text" id="nama" name="nama" required>
+
+		<label for="email">Alamat Email</label>
+		<input type="email" id="email" name="email" required>
+
+		<label>Jenis Kelamin</label>
+		<input type="radio" id="laki-laki" name="jenis-kelamin" value="Laki-laki" required>
+		<label for="laki-laki">Laki-laki</label>
+
+		<input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan" required>
+		<label for="perempuan">Perempuan</label>
+
+		<label for="barang">Barang yang Dibeli</label>
+		<select id="barang" name="barang">
+			<option value="Laptop">Laptop</option>
+			<option value="PC">PC</option>
+			<option value="Printer">Printer</option>
+		</select>
+
+		<label for="spesifikasi">Spesifikasi Barang</label>
+		<textarea id="spesifikasi" name="spesifikasi" rows="5"></textarea>
+
+		<label for="file">Upload Bukti Pembayaran</label>
+		<input type="file" id="file" name="file">
+
+		<label>Pengiriman</label>
+		<input type="checkbox" id="jne" name="pengiriman[]" value="JNE">
+		<label for="jne">JNE</label>
+
+		<input type="checkbox" id="pos" name="pengiriman[]" value="POS">
+		<label for="pos">POS</label>
+
+		<input type="checkbox" id="tiki" name="pengiriman[]" value="TIKI">
+		<label for="tiki">TIKI</label>
+
+		<button type="submit">Kirim</button>
+	</form>
+</body>
+</html>
+<nav>
+    <ul>
+        <li><a href="index.html">Halaman Awal</a></li>
+    </ul>
+</nav>
