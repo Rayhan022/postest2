@@ -1,0 +1,76 @@
+/* Style untuk form */
+form {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+/* Style untuk label */
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Style untuk input dan select box */
+input[type="text"], select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+input[type="password"], select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+input[type="email"], select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Style untuk radio button dan check box */
+input[type="radio"], input[type="checkbox"]{
+    margin-right: 5px;
+}
+
+/* Style untuk button */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Style untuk textarea */
+textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Style untuk header */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+

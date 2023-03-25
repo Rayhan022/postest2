@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <link rel="stylesheet" type="text/css" href="cssfile/daftar.css">
+    <form method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="nama_lengkap" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"/><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id="male" value="male" checked>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+            <option value="indonesia">Indonesia</option>
+            <option value="malaysia">Malaysia</option>
+            <option value="singapore">Singapore</option>
+            <option value="thailand">Thailand</option>
+        </select><br><br>
+
+        <label for="interests">Interests:</label>
+        <input type="checkbox" name="interests[]" value="editing">
+        <label for="editing">Editing</label>
+        <input type="checkbox" name="interests[]" value="Gaming">
+        <label for="gaming">Gaming</label>
+        <input type="checkbox" name="interests[]" value="music">
+        <label for="musci">Music</label><br><br>
+
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="comments" rows="5"></textarea><br><br>
+
+        <button type="submit" id="kirim">Kirim</button>
+        <br>
+        <p>Sudah ada akun/sudah membuat?? <a href="login.html">Login</a></p>
+    </form>
+</body>
+<script src="jsfile/daftar.js"></script>
+</html>
+
+
